@@ -1,0 +1,15 @@
+{
+  "experiment": "manifest",
+  "generated_utc": "2026-10-24T06:57:46.351451+00:00",
+  "environment": {
+    "python": "3.14.5",
+    "numpy": "2.5.4",
+    "sympy": "1.14.0"
+  },
+  "reports": [
+    "convergence.json",
+    "stability.json",
+    "laplace.json"
+  ],
+  "all_checks_passed": true
+}

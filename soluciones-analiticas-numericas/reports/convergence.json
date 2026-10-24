@@ -1,0 +1,102 @@
+{
+  "experiment": "convergence",
+  "generated_utc": "2026-10-24T06:57:46.025510+00:00",
+  "environment": {
+    "python": "3.14.5",
+    "numpy": "2.5.4",
+    "sympy": "1.14.0"
+  },
+  "equation": "dy/dt=-2*y",
+  "initial": {
+    "t": 0,
+    "y": 1
+  },
+  "t_end": 2,
+  "rows": [
+    {
+      "method": "euler",
+      "h": 0.2,
+      "steps": 10,
+      "final": 0.006046617599999998,
+      "exact_final": 0.01831563888873418,
+      "final_abs_error": 0.01226902128873418,
+      "max_abs_error": 0.08932896411722158,
+      "elapsed_ns": 157200
+    },
+    {
+      "method": "euler",
+      "h": 0.1,
+      "steps": 20,
+      "final": 0.01152921504606847,
+      "exact_final": 0.01831563888873418,
+      "final_abs_error": 0.006786423842665708,
+      "max_abs_error": 0.04019944117144231,
+      "elapsed_ns": 45200
+    },
+    {
+      "method": "euler",
+      "h": 0.05,
+      "steps": 40,
+      "final": 0.014780882941434589,
+      "exact_final": 0.01831563888873418,
+      "final_abs_error": 0.00353475594729959,
+      "max_abs_error": 0.019201001071442347,
+      "elapsed_ns": 44100
+    },
+    {
+      "method": "euler",
+      "h": 0.025,
+      "steps": 80,
+      "final": 0.01651537438501364,
+      "exact_final": 0.01831563888873418,
+      "final_abs_error": 0.0018002645037205403,
+      "max_abs_error": 0.009393518762900122,
+      "elapsed_ns": 53100
+    },
+    {
+      "method": "rk4",
+      "h": 0.2,
+      "steps": 10,
+      "final": 0.01833749701777994,
+      "exact_final": 0.01831563888873418,
+      "final_abs_error": 2.185812904575979e-05,
+      "max_abs_error": 0.000107789751797982,
+      "elapsed_ns": 41100
+    },
+    {
+      "method": "rk4",
+      "h": 0.1,
+      "steps": 20,
+      "final": 0.01831679336937439,
+      "exact_final": 0.01831563888873418,
+      "final_abs_error": 1.1544806402113972e-06,
+      "max_abs_error": 5.79695385960477e-06,
+      "elapsed_ns": 72900
+    },
+    {
+      "method": "rk4",
+      "h": 0.05,
+      "steps": 40,
+      "final": 0.018315705253205333,
+      "exact_final": 0.01831563888873418,
+      "final_abs_error": 6.636447115460076e-08,
+      "max_abs_error": 3.3324105608301124e-07,
+      "elapsed_ns": 107800
+    },
+    {
+      "method": "rk4",
+      "h": 0.025,
+      "steps": 80,
+      "final": 0.018315642866939794,
+      "exact_final": 0.01831563888873418,
+      "final_abs_error": 3.9782056156234535e-09,
+      "max_abs_error": 1.9976097331841913e-08,
+      "elapsed_ns": 197800
+    }
+  ],
+  "checks": {
+    "errors_finite": true,
+    "error_decreases_with_h": true
+  },
+  "timing_note": "Single-run timings are illustrative, not rigorous benchmarks."
+}

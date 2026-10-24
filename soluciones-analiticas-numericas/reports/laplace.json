@@ -1,0 +1,21 @@
+{
+  "experiment": "laplace",
+  "generated_utc": "2026-10-24T06:57:46.349606+00:00",
+  "environment": {
+    "python": "3.14.5",
+    "numpy": "2.5.4",
+    "sympy": "1.14.0"
+  },
+  "equation": "y_second+4*y=sin(t)",
+  "initial": {
+    "y0": 1,
+    "dy0": 0
+  },
+  "laplace_Y": "(s**3 + s + 1)/(s**4 + 5*s**2 + 4)",
+  "solution": "sin(t)/3 - sin(2*t)/6 + cos(2*t)",
+  "checks": {
+    "ode_residual_zero": true,
+    "y0_one": true,
+    "dy0_zero": true
+  }
+}
